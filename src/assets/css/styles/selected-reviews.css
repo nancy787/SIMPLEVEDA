@@ -1,0 +1,28 @@
+.selectedreviewscontainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.reviewblock .comment-author-name {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: "Open Sans";
+}
+
+.reviewblock .comment-content {
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+
+.reviewblock {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.reviewcontent {
+    padding-left: 50px;
+}

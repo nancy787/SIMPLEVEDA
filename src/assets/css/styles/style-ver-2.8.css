@@ -1,0 +1,2183 @@
+/*
+Theme Name: Kalvi
+Theme URI: http://kalvi.wpengine.com/
+Author: the DesignThemes team
+Author URI: http://themeforest.net/user/designthemes
+Description: Kalvi
+Version: 2.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: kalvi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* css add by pradip for calender */
+/* 
+new chnages */
+
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-63ab213.elementor-section-height-min-height.elementor-hidden-mobile.elementor-section-boxed.elementor-section-height-default.elementor-section-items-middle{
+	background:white;
+}
+
+a.bonatebtn:hover {
+    background: white;
+    color: #151741;
+}
+
+a.bonatebtn {
+    padding: 7px 16px;
+    background: #151741;
+    color: white;
+    border-radius: 11px;
+    margin-left: 17px;
+}
+
+/* ul.event-venue.sociallink ~ ul.event-venue.sociallink{
+	display:none;
+} */
+a.youtube-s i {
+    color: red;
+    background: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 9px;
+}
+a.facebook-s i {
+    color: #6a6aeb;
+    font-size: 20px;
+	 background: white;
+	 border-radius: 9px;
+	 margin-left: 10px;
+     padding: 10px 15px !important;
+    margin-top: -10px !important;
+}
+
+ul.sociallinks li dt {
+    margin-bottom: 10px !important;
+}
+.fa-youtube:before {
+    content: "\f167";
+    font-family: 'Font Awesome 5 Brands';
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-video:before {
+    content: "\f03d";
+    font-family: 'Font Awesome 5 Free';
+}
+
+a.zoom-s i {
+    color: #57b1ff;
+    font-size: 20px;
+	 background: white;
+	 border-radius: 9px;
+	 margin-left: 6px;
+ padding: 10px 9px !important;
+    margin-top: -10px !important;
+}
+
+
+.entry-content p {
+    text-align: justify;
+}
+
+
+
+.tribe-events-calendar-month {
+/*     background-image: url(https://www.simplevedas.com/wp-content/uploads/2022/07/Simple-Vedas-Website-Calendar-Background.jpg) !important; */
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-datetime>*{
+	font-weight: 600 !important;
+}
+.tribe-events .tribe-events-calendar-month__calendar-event-title{
+	font-weight: 600 !important;
+}
+
+.tooltipster-box:hover{
+	background:rgb(21, 23, 65) !important;
+}
+
+h3.tribe-events-calendar-month__calendar-event-tooltip-title.tribe-common-h7{
+	margin-bottom: 0px;
+    padding-bottom: 6px;
+}
+
+
+.tooltipster-box:hover .tooltipster-content .tribe-events-calendar-month__calendar-event-tooltip .tribe-events-calendar-month__calendar-event-tooltip-description.tribe-common-b3 p{
+	background:rgb(21, 23, 65) !important;
+	color:white !important;
+}
+
+.tooltipster-box:hover .tooltipster-content .tribe-events-calendar-month__calendar-event-tooltip h3.tribe-events-calendar-month__calendar-event-tooltip-title.tribe-common-h7{
+	background:rgb(21, 23, 65) !important;
+	color:white;
+}
+.tooltipster-box:hover .tooltipster-content .tribe-events-calendar-month__calendar-event-tooltip h3.tribe-events-calendar-month__calendar-event-tooltip-title.tribe-common-h7 a{
+	color:white !important;
+}
+.tooltipster-base.tribe-events-tooltip-theme .tooltipster-box{
+	padding: 25px 10px !important;
+}
+
+.tribe-events-c-small-cta.tribe-common-b3.tribe-events-calendar-month__calendar-event-tooltip-cost {
+    display: none !important;
+}
+
+.tribe-events-calendar-month__calendar-event-tooltip-featured-image-wrapper{
+	display:none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__header-column-title-desktop{
+	color:white;
+	font-size:15px;
+}
+
+/* input#tribe-events-events-bar-keyword {
+    visibility: hidden !important;
+} */
+
+button.tribe-common-c-btn.tribe-events-c-search__button {
+    background: #ffc13c !important;
+}
+
+button.tribe-common-c-btn.tribe-events-c-search__button:hover {
+    background: #ffc13c !important;
+}
+.tribe-events-calendar-month__header-column {
+    background: rgb(243, 192, 88);
+    padding: 15px !important;
+    border-right: 1px solid #959595 !important !important;  
+    border-bottom: 1px solid black !important;
+}
+.tribe-events-calendar-month__calendar-event-tooltip {
+    background: white !important;
+    border: none !important;
+    padding: 10px 25px;
+}
+.tooltipster-box {
+    padding: 10px !important;
+    background: white !important;
+}
+.tooltipster-sidetip .tooltipster-box {
+    background: #565656;
+    border: none;
+   
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day:hover .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event .tribe-events-calendar-month__calendar-event-details .tribe-events-calendar-month__calendar-event-datetime>* {
+	color:black !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day:hover .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event .tribe-events-calendar-month__calendar-event-details h3.tribe-events-calendar-month__calendar-event-title.tribe-common-h8.tribe-common-h--alt a{
+	color:black !important;
+}
+
+.tribe-events-calendar-month__day-cell:hover {
+    background: linear-gradient(82deg, white, transparent);
+}
+/* a.tribe-events-calendar-month__calendar-event-tooltip-title-link.tribe-common-anchor-thin {
+    color: black;
+    font-size: 15px;
+} */
+
+.type1.tribe_events ul.event-details li dt, .type1.tribe_events .event-organize li dt, .type1.tribe_events .event-venue li dt, .type1.tribe_events .event-custom-fields li dt{
+	width: 34% !important;
+}
+
+p.tribe-events-promo.tribe-common-b1.tribe-events-c-promo {
+    display: none !important;
+}
+time {
+    font-size: 16px !important;
+}
+
+.type1.tribe_events .event-image-wrapper .date-wrapper {
+    position: absolute;
+    right: -280px !important;
+    top: 52px !important;
+}
+
+
+p.event-venue {
+    display: none !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__week {
+    border-left: 2px solid #f1f1f1 !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day{
+	border-color:#f1f1f1 !important;
+}
+.tribe-common-c-btn-border.tribe-events-c-subscribe-dropdown__button {
+    background: rgb(21, 23, 65) !important;
+    border: 1px solid rgb(21, 23, 65) !important;
+    padding-top: 18px !important;	
+}
+.tribe-common-c-btn-border.tribe-events-c-subscribe-dropdown__button button {
+    color: white !important;
+    font-size: 14px;
+}
+button.tribe-events-c-subscribe-dropdown__button-text {
+    color: black !important;
+}
+.tribe-common .tribe-common-c-svgicon__svg-fill{
+/* 	fill:white !important; */
+}
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item, .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item{
+	    border-radius: 10px;
+	background: #151741;
+    margin-bottom: 2px !important;
+}
+
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button{
+	width:216px;
+}
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item, .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item{
+	width:188px;
+}
+
+.tribe-events-calendar-list {
+    background-image: url(https://www.simplevedas.com/wp-content/uploads/2022/07/Simple-Vedas-Website-Events-Page-Background-1.jpg);
+}
+
+.tribe-common.tribe-events.tribe-events-view.tribe-events-view--month.tribe-common--breakpoint-xsmall.tribe-common--breakpoint-medium.tribe-common--breakpoint-full{
+	 background-image: url(https://www.simplevedas.com/wp-content/uploads/2022/07/Simple-Vedas-Website-Calendar-Background.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -2px;
+    background-position-y: 97px;
+	margin-bottom: 80px !important;
+}
+
+
+.tribe-events-c-top-bar.tribe-events-header__top-bar {
+    max-width: 339px !important;
+}
+
+#header-wrapper.header-top-relative #header{
+	display:none !important;
+}
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item a, .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list-item a{
+	color:white;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month{
+	margin-bottom:60px;
+}
+
+
+
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button-icon, .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button-icon{
+ margin-top: -7px !important;
+}
+
+.tribe-events-calendar-month__header-column {
+    border-right: 1px solid white !important;
+}
+.tribe-common .tribe-common-h4{
+	color: #ffffff;
+}
+
+.tribe-events-calendar-month__header-column{
+	    border-bottom: 1px solid white !important;
+}
+a.tribe-common-c-btn-border-small.tribe-events-c-top-bar__today-button.tribe-common-a11y-hidden{
+	color: black !important;
+}
+.tribe-events-calendar-month__calendar-event-datetime {
+    color: white;
+}
+a.tribe-events-calendar-month__calendar-event-title-link.tribe-common-anchor-thin.tooltipstered {
+    color: white;
+}
+
+
+
+
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container{
+	padding-top: 10px !important;
+}
+
+
+button.tribe-common-c-btn.tribe-events-c-search__button {
+    color: black !important;
+}
+
+.container.pa-event {
+    padding-top: 90px;
+}
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-l-container {
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container{
+	padding-bottom:30px !important;
+}
+
+
+.tribe-events-calendar-month__day-cell:hover h3 .tribe-events-calendar-month__day-date-daynum{
+	color:black !important;
+}
+
+.tribe-events-calendar-month__day-cell:hover .tribe-common .tribe-common-anchor-thin{
+	color:black !important;
+}
+.tooltipster-base.tribe-events-tooltip-theme .tooltipster-box{
+	border-radius:15px; 
+}
+
+.tribe-events-calendar-month__calendar-event-tooltip-datetime {
+    display: none;
+}
+
+
+
+.type1.tribe_events ul.event-details li a{
+	padding-left:5px;
+}
+.type1.tribe_events ul.event-details {
+    margin-top: 100px;
+}
+
+body.tribe_events-template-default.single.single-tribe_events.postid-25026.wp-embed-responsive.theme-kalvi.woocommerce-js.tribe-events-page-template.tribe-js.tribe-filter-live.kalvi.layout-wide.wpb-js-composer.js-comp-ver-6\.9\.0.vc_responsive.elementor-default.elementor-kit-19146.e--ua-blink.e--ua-chrome.e--ua-webkit{
+	background-image: url(https://www.simplevedas.com/wp-content/uploads/2022/07/Simple-Vedas-Website-Events-Page-Background-1.jpg);
+	background-size: cover;
+}
+.type1.tribe_events ul.event-details li .cat-wrapper a{
+	color:black !important;
+}
+i.fab.fa-youtube.single:hover , i.fab.fa-facebook-f:hover, i.fas.fa-video.video-c:hover{
+    background: #f3f3f3;
+}
+
+.dt-sc-one-third.column h3:nth-of-type(3) {
+    display: none !important;
+}
+
+.dt-sc-one-third.column h3:nth-of-type(3) {
+    display: none !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__header-column-title-desktop{
+	text-align:center;
+	font-weight:600;
+}
+
+/* Mobile view for single page */
+
+
+@media only screen and (max-width: 667px) {
+p.event-datetime {
+    display: none;
+}
+
+	.type1.tribe_events ul.event-details li dt, .type1.tribe_events .event-organize li dt, .type1.tribe_events .event-venue li dt, .type1.tribe_events .event-custom-fields li dt {
+/*     width: 25% !important; */
+    font-size: 12px;
+}
+	.type1.tribe_events ul.event-details li, .type1.tribe_events .event-organize li, .type1.tribe_events .event-venue li, .type1.tribe_events .event-custom-fields li{
+		font-size:12px;
+	}
+}
+.type1.tribe_events .event-schedule{
+	display:none;
+	padding-bottom:30px !important;
+}
+/* end Mobile view for single page  */
+
+/*  start User registration css */
+
+
+.country-cl .forminator-row {
+    width: 100% !important;
+}
+
+span.forminator-icon-chevron-down {
+    display: none !important;
+}
+.dt-sc-two-third.column.first {
+    margin-top: 10px;
+}
+.dt-sc-one-third h3{
+	 padding-top: 14px;
+}
+
+.password-cl .forminator-row {
+    width: 100% !important;
+}
+
+.forminator-row:has(.password-cl) {
+    width: 100% !important;
+}
+/* .forminator-row.forminator-row-last {
+	width: 100% !important;
+} */
+#text-1, .text-1{
+	padding-right:15px !important;
+}
+.checkbox-1{
+	padding-top:20px !important;
+}
+
+form#forminator-module-25012 .forminator-row:last-child{
+	width:100% !important;
+}
+
+.forminator-ui#forminator-module-25012.forminator-design--default .forminator-label {
+    color: #000000 !important;
+    font-size: 13px !important;
+    font-family: 'Open Sans' !important;
+}
+
+.forminator-ui#forminator-module-25012.forminator-design--default .forminator-input, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:active {
+    border-color: #c5c5be;
+    background-color: #EDEDED;
+    color: #000000;
+    font-family: 'Open Sans' !important;
+    font-size: 14px !important;
+}
+
+button.forminator-button.forminator-button-submit {
+	
+background-color: #24100f !important;
+}
+button.forminator-button.forminator-button-submit {
+    width: 100% !important;
+}
+button.forminator-button.forminator-button-submit {
+    padding: 12px !important;
+    font-size: 17px !important;
+}
+
+.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form[data-design=default] .forminator-input, .forminator-ui.forminator-custom-form[data-design=default] .forminator-input{
+	padding:12px !important;
+}
+
+.forminator-ui#forminator-module-25012.forminator-design--default .forminator-input, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-25012.forminator-design--default .forminator-input:active{
+	background:white !important;
+}
+
+span#select2-forminator-form-25038__field--address-1-container {
+    background: white;
+}
+
+span.select2-selection__arrow {
+    background: white;
+}
+
+::-webkit-input-placeholder {
+    color: #545454 !important;
+    font-size: 12px;
+}
+
+
+input#forminator-field-phone-2 {
+
+    padding-top: 13px !important;
+}
+
+.forminator-ui#forminator-module-25038.forminator-design--default .forminator-error-message {
+    background-color: #00000008 !important;
+    color: #0a0a0a !important;
+}
+.forminator-ui#forminator-module-25038.forminator-design--default .forminator-error-message {
+    font-weight: 400;
+    padding: 0px 8px;
+    margin-bottom: -17px;
+}
+
+div#text-1:before {
+    content: "\f007" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    position: absolute !important;
+    top: 15px;
+	left: 29px;
+	display:none;
+}
+div#email-1:before {
+    content: "\f0e0" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    position: absolute !important;
+    top: 10px;
+	left: 14px;
+}
+
+div#password-1{
+	 position: relative !important;
+}
+
+div#text-1 {
+    position: relative !important;
+	padding-right:15px !important;
+}
+div#password-1:before {
+    content: "\f06e" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    position: absolute !important;
+    top: 15px;
+	left: 27px;
+	display:none;
+}
+.active-password .forminator-field{
+  position: relative !important;
+}
+.active-password .forminator-field:before{
+	   content: "\f06e" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    position: absolute !important;
+    top: 15px;
+	left: 14px;
+}
+
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__export-icon, .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__export-icon path{
+	fill:white !important;
+}
+
+
+.forminator-ui#forminator-module-25038.forminator-design--default .forminator-input, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:active{
+	padding-left: 43px !important;
+    color: #000000 !important;
+}
+
+
+div#email-1 {
+    position: relative !important;
+}
+
+a.privacy-policy-link {
+    color:#704D33;
+    font-size: 15px;
+}
+
+a.privacy-policy-link:hover {
+    color: #704D33;
+}
+.forminator-ui#forminator-module-25012.forminator-design--default .forminator-has_error .forminator-input {
+    border-color: #707070;
+}
+
+.forminator-response-message.forminator-show.forminator-success p a {
+    color: red;
+}
+.forminator-ui#forminator-module-25038.forminator-design--default .forminator-response-message.forminator-success, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-response-message.forminator-success p{
+	font-size: 13px;
+}
+.forminator-ui#forminator-module-25038.forminator-design--default .forminator-input, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-25038.forminator-design--default .forminator-input:active{
+	background-color:white !important;
+}
+/* Mobile view css start */
+@media only screen and (max-width: 667px) {
+	.iti__flag.iti__in {  
+		background-position: -2423px 0 !important;
+	}
+	.iti__flag.iti__iq {
+		background-position: -2444px 0;
+	}
+
+
+	div#text-1 {
+		position: relative !important;
+		padding-right:0px !important;
+	}
+
+}
+/* end Mobile view css user registarion */
+
+
+/* 
+end user registration code */
+
+
+
+.tribe-common-c-btn-border.tribe-events-c-subscribe-dropdown__button{
+	padding-top: 14px !important;
+    padding-bottom: 6px !important;
+}
+.tribe-events-calendar-month__calendar-event-datetime > time {
+    font-size: 14px !important;
+}
+/* 
+30-07-22 */
+
+
+time.tribe-events-calendar-month__day-date-daynum a {
+    color: white;
+}
+
+time.tribe-events-calendar-month__day-date-daynum a:after {
+    content: "\ece2";
+	font-family: 'IcoMoon-Ultimate';
+	color: #f3c058;
+}
+.type1.tribe_events .nav-top-links{
+	display:none;
+}
+
+.type1.tribe_events .event-organize li:nth-child(3) {
+    display: none;
+}
+
+
+ul.event-venue.sociallink li:first-child dt {
+/*     margin-top: 9px; */
+}
+
+
+span.timezone {
+    display: none;
+}
+
+span.tribe-events-c-small-cta__price {
+    display: none;
+}
+input#tribe-events-events-bar-keyword {
+    display: none;
+}
+
+
+.tribe-events-header__events-bar.tribe-events-c-events-bar.tribe-events-c-events-bar--border {
+    margin-bottom: -32px;
+}
+
+
+header#header {
+    display: none !important;
+}
+div#tribe-events-events-bar-search {
+    display: none;
+}
+
+
+*/
+.tribe-events-calendar-month {
+    margin: 0px 45px !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-view-selector--tabs .tribe-events-c-view-selector__list-item-link{
+	  padding: 7.5px 2px !important;
+}
+.tribe-events-c-view-selector__list-item--active{
+	border-radius: 5px !important;
+	background: #ffc13c;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month {
+       margin-top: 55px !important;
+    margin-bottom: 15px !important;
+	margin: 45px;
+} 
+ .single-tribe_events .tribe-events-c-subscribe-dropdown__button {
+    width: 214px !important;
+}
+
+
+
+svg.tribe-common-c-svgicon.tribe-common-c-svgicon--cal-export.tribe-events-c-subscribe-dropdown__export-icon {
+    display: none;
+}
+
+.dt-sc-one-third.column h3:nth-of-type(2) {
+    display: none;
+}
+
+.dt-sc-one-third.column h4:nth-of-type(1) {
+    display: none;
+}
+
+.type1.tribe_events ul.event-details li:nth-child(4) {
+    display: none !important;
+}
+.type1.tribe_events ul.event-details li:nth-child(5) {
+    display: none !important;
+}
+ul.event-venue.category-cl ~ ul.event-venue.category-cl{
+	display:none !important;
+}
+
+.type1.tribe_events .event-organize {
+    margin-bottom: -7px;
+}
+
+dt{
+	font-weight:600 !important;
+}
+
+.tribe-events-calendar-list__event-details.tribe-common-g-col .category-cl {
+    display: none;
+} 
+
+ul.sociallinks {
+    margin-top: 19px;
+}
+ul.event-venue.sociallink ~ ul.event-venue.sociallink{
+	display:none !important;
+}
+
+/* .entry-content p {
+    margin-right: 32px;
+} */
+
+
+i.fab.fa-youtube.single,i.fab.fa-facebook-f,i.fas.fa-video.video-c {
+    box-shadow: 0px 2px 10px -1px #060606;
+}
+
+a.bonatebtn{
+	 box-shadow: 0px 2px 10px -1px #060606 !important;
+}
+
+span.tribe-events-c-view-selector__list-item-text {
+    font-size: 14px !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h3--min-medium{
+	font-family: "Raleway", Sans-serif !important;
+}
+
+
+.tribe-common a, .tribe-common abbr, .tribe-common acronym, .tribe-common address, .tribe-common applet, .tribe-common article, .tribe-common aside, .tribe-common audio, .tribe-common b, .tribe-common big, .tribe-common blockquote, .tribe-common canvas, .tribe-common caption, .tribe-common center, .tribe-common cite, .tribe-common code, .tribe-common dd, .tribe-common del, .tribe-common details, .tribe-common dfn, .tribe-common div, .tribe-common dl, .tribe-common dt, .tribe-common em, .tribe-common embed, .tribe-common fieldset, .tribe-common figcaption, .tribe-common figure, .tribe-common footer, .tribe-common form, .tribe-common h1, .tribe-common h2, .tribe-common h3, .tribe-common h4, .tribe-common h5, .tribe-common h6, .tribe-common header, .tribe-common i, .tribe-common iframe, .tribe-common img, .tribe-common ins, .tribe-common kbd, .tribe-common label, .tribe-common legend, .tribe-common li, .tribe-common main, .tribe-common mark, .tribe-common menu, .tribe-common nav, .tribe-common object, .tribe-common ol, .tribe-common output, .tribe-common p, .tribe-common pre, .tribe-common q, .tribe-common ruby, .tribe-common s, .tribe-common samp, .tribe-common section, .tribe-common small, .tribe-common span, .tribe-common strike, .tribe-common strong, .tribe-common sub, .tribe-common summary, .tribe-common sup, .tribe-common table, .tribe-common tbody, .tribe-common td, .tribe-common tfoot, .tribe-common th, .tribe-common thead, .tribe-common time, .tribe-common tr, .tribe-common tt, .tribe-common u, .tribe-common ul, .tribe-common var, .tribe-common video{
+	font-family: "Raleway", Sans-serif !important;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-description p{
+	text-align:justify !important;
+	font-size:15px !important;
+}
+.type1.tribe_events h3, .type1 h3.tribe-events-related-events-title,.type1.tribe_events h2{
+	font-family: "Raleway", Sans-serif !important;
+}
+
+.tribe-events .tribe-events-calendar-list__event-title-link {
+    color: #151741 !important;
+}
+.tribe-events-c-messages__message.tribe-events-c-messages__message--notice {
+    background: white;
+}
+
+.elementor-25039 .elementor-element.elementor-element-679d51c .elementor-icon-list-text:hover {
+    text-decoration: underline;
+}
+
+.tribe-events-calendar-month__day-cell:hover h3 time a {
+    color: black;
+}
+
+.type1.tribe_events h2 {
+    color: #151741 !important;
+}
+.type1.tribe_events .event-organize li a {
+    color: #151741;
+}
+.type1.tribe_events ul.event-details li:nth-child(6) {
+	display:none !important;
+}
+
+.dt-sc-hr-invisible-xsmall{
+	margin: 0px 0 0 !important;
+}
+.type1.tribe_events ul.event-details {
+    margin-bottom: 0px !important;
+}
+
+.tribe-events-calendar-month__calendar-event-datetime {
+    display: none;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600 !important;
+}
+
+
+li.tribe-events-c-messages__message-list-item {
+    margin-left: 10px;
+	font-size: 16px;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-messages__message {
+    justify-content: center;
+    padding-bottom: 44px !important;
+}
+
+.type1.tribe_events h2 {
+    margin-bottom: 35px;
+}
+
+
+.dtlms-course-detail-news-thumb a img {
+    border-radius: 17px !important;
+}
+
+.dtlms-course-detail-news-item .dtlms-course-detail-news-date{
+	color: rgb(255 193 60) !important;
+}
+
+/* 
+
+css for tab in course shelud tab  */
+
+body{
+    background: #cccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-tab{
+    display: flex;
+justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0px 0px;
+    padding: 1px;
+}
+
+.container-tab input[type="radio"]{
+    display: none;
+}
+
+.container-tab label {
+    text-align: center;
+   padding: 5px 31px;
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-tab label:hover{
+    background:rgb(255,210,60);
+
+}
+
+.container-tab .tab{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    background: #ffff;
+    order: 1;
+    display: none;
+	    margin-top: 50px;
+
+}
+
+.container-tab .tab h2{
+    font-size: 3em;
+}
+
+.container-tab input[type="radio"]:checked + label + .tab {
+    display: block;
+	overflow-y: scroll;
+	height: 378px;
+}
+
+.container-tab input[type="radio"]:checked + label {
+    background: rgb(255,210,60);
+    color: #222;
+	
+}
+
+.detials {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.date {
+    border: 3px solid rgb(255,210,60);
+    border-radius: 20px;
+    padding: 0px 10px !important;
+    align-items: center;
+/*     height: 73px; */
+}
+.y-bg, .round{
+        border: 3px solid rgb(255,210,60);
+  
+	background: rgb(255,210,60) !important;
+}
+.dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a.current{
+	background: rgb(255,210,60) !important;
+}
+
+p.date-month {
+    margin: 15px 5px -10px 5px;
+    font-size: 15px;
+    font-weight: 900 !important;
+    font-family: 'poppins';
+}
+
+p.day{
+    margin: 0px 5px 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'poppins';
+}
+
+
+.desctiption-details {
+    display: flex;
+}
+
+.title-details {
+    padding-left: 10px;
+}
+
+p.IST-time {
+    margin: 0px 0px 10px 0px;
+    font-family: 'poppins';
+}
+p.share-link{
+    margin: 0px 0px 10px 0px;
+    font-family: 'poppins';
+}
+p.s-title {
+    margin: 15px 0px 0px 0px;
+    color: rgb(27, 66, 152);
+    font-weight: 900 !important;
+    font-family: 'poppins';
+}
+
+
+.detials.y-bg-gradient {
+    background-image: linear-gradient(50deg, #ffc13c -24%, transparent 54%);
+    border-radius: 20px;
+	height:87px;
+}
+.detials.y-bg-gradient .title-details .s-title{
+	 margin: 25px 0px 0px 0px !important;
+}
+.y-bg-gradient .date{
+    border: none;
+    padding: 5px;
+}
+
+.holiday{
+    color:rgb(116, 57, 150) !important;
+}
+.schedule-tab-cl{
+	margin-bottom:-52px !important;
+	z-index: -1;
+}
+p.share-link {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+}
+img.marker-icon {
+    margin-right: 7px;
+}
+
+p.IST-time {
+    display: flex !important;
+    align-items: center;
+}
+
+img.watch-icon {
+    margin-right: 8px;
+}
+
+.detials:hover {
+    background-image: linear-gradient(50deg, #ffc13c -7%, transparent 96%);
+    border-radius: 20px 0px 0px 20px;
+}
+.detials:hover .date {
+    background: #222222 !important;
+    color: white !important;
+    border-color: white;
+}
+
+.detials:hover .title-details .s-title {
+    color: #222222;
+}
+p.s-title.comp-title {
+    color: rgb(40, 133, 124);
+}
+
+.dtlms-course-detail.type2 .dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal {
+    background-color: #2f2f2f !important;
+}
+.dtlms-course-detail.type2 .dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a{
+color:white !important}
+.scroll_tab_right_button{
+	background-color: #2f2f2f !important;
+}
+.scroll_tabs_container .scroll_tab_left_button{
+	    background: linear-gradient(to right,#2f2f2f 0%,#2f2f2f 100%) !important;
+}
+.scroll_tab_right_button{
+	background: linear-gradient(to right,#2f2f2f 0%,#2f2f2f 100%) !important;
+}
+.type2 .scroll_tabs_container .scroll_tab_left_button:before, .type2 .scroll_tabs_container .scroll_tab_right_button:before{
+	color:white !important;
+}
+
+svg.schlde-cl {
+    width: 16px !important;
+}
+.dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a.current .schlde-cl .cls-1{
+fill:white !important;
+}
+.dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a:hover .schlde-cl .cls-1{
+	fill:white !important;
+}
+.dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a .schlde-cl .cls-1{
+	fill:white !important;
+}
+.form-row .form-row-first {
+	font-size: 17px !important;
+	
+}
+
+.paoc-popup-click .paoc-popup-cust-25602 .paoc-popup-simple_link .paoc-popup-link{
+	color:#000 !important;
+}
+
+.paoc-credit-wrp{
+	display:none !important;
+}
+
+.paoc-popup-inr-wrap, #paoc-popup-25602-3, #paoc-popup-25669-4, #paoc-popup-25602-5, .paoc-modal-popup{
+	border-radius:30px !important;
+}
+
+#paoc-popup-25602-3, .paoc-modal-popup{
+	max-width:700px !important
+}
+
+.forminator-pagination-footer{
+	margin-top:20px !important;
+}
+
+.forminator-button-next{
+	width:100% !important;
+	background-color:#000 !important
+}
+
+#address-1, #address-1-address_line, #address-1-city, #address-1-state, #address-1-zip, #address-1-country{
+	margin-top:-7px !important;
+}
+
+.forminator-button-back{
+	display:none !important;
+}
+
+.tutor-avatar{
+	border:4px solid yellow ;
+}
+
+#forminator-module-25038{
+	margin-top:0;
+}
+#forminator-module-25038{
+	margin-bottom:10px;
+}
+
+.tutor-frontend-dashboard-header{
+	padding-bottom:0 !important;
+}
+
+.tutor-py-48 .tutor-fs-4{
+	display:none !important;
+}
+
+.tutor-modal-window-sm{
+	max-width:700px !important;
+}
+
+.tutor-modal-body .tutor-py-48{
+	width:70%;
+	margin:0 auto;
+}
+
+#checkbox-2{
+	margin-top:-30px;
+}
+
+.xoo-wsc-ft-btn-continue, .xoo-wsc-ft-btn-cart{
+	display:none !important;
+}
+.xoo-wsc-ft-btn-checkout{
+	background:black !important;
+	color:white !important;
+}
+
+/* .elementor-shortcode span{
+	position: relative;top: -5px;margin-left: 5px;
+} */
+
+.forminator-response-message {
+	background:none;
+}
+
+.woocommerce-info:before{
+	background-color:#fbc13b !important;
+}
+
+.elementor-element-7b540e1{
+	margin-bottom:0 !important;
+}
+
+.xoo-wsc-header {
+background-image: linear-gradient(to right,#ffcd28,white);padding:10px;
+}
+
+.xoo-wsc-ft-amt{
+margin: 0 !important;font-weight: bold;
+}
+.xoo-wsc-ft-totals{
+	padding:0 !important;
+}
+
+#billing_first_name_field{
+	margin:0 !important;
+}
+
+.woocommerce-billing-fields__field-wrapper, #billing_first_name_field, #shipping_first_name_field{
+	font-size:14px;
+}
+
+/* .tutor-btn{
+	background: #ffcd28 !important;color: black !important;
+} */
+.icon-content p{
+	color:#292828 !important;
+}
+.jeg_post_meta{
+	display:none !important;
+}
+
+/* #password-1{
+	padding-right:0px !important;
+} */
+
+#paoc-popup-25602-6{
+	top:80px !important;
+}
+#forminator-module-25670{
+	margin-bottom:0px !important;
+}
+
+.main-title-section-bg{
+	background: url("https://www.simplevedas.com/wp-content/uploads/2022/05/Breadcrumb-7.jpg") !important;
+	background-size:auto !important;
+	background-attachment:inherit !important;
+	
+}
+.aligncenter{
+	text-align:end !important;
+	height:148px !important;
+}
+
+.circle{
+	width:80px;
+	height:80px;
+	background:yellow;
+	border-radius:50%;
+}
+
+.aio-icon{
+	padding-top:23px;
+}
+
+.learning-header{
+	display:none !important;
+}
+
+.1528802127264-94493132-bfaf{
+	height:80px !important;
+}
+
+
+.dtlms-coursedetail-cart-details a{
+	display:none !important;
+}
+
+.email-1::before{display:none !important;}
+
+.paoc-popup-btn{
+	background: none !important;
+}
+
+.forminator-label , .forminator-required{
+	color:#000 !important;
+}
+
+.forminator-field::before{
+	display:none !important;
+}
+
+
+
+#toTop{
+	bottom:105px !important;
+	right:30px !important;
+}
+
+.dtlms-tabs-horizontal-container ul.dtlms-tabs-horizontal li a{
+	line-height:62px !important;
+}
+
+.small{
+	color:#000 !important;
+}
+
+.tutor-ul li:last-child, .tutor-ul li:nth-child(2){
+display:none !important;
+}
+
+.tutor-card-body .tutor-fs-7{
+	display:none !important;
+}
+
+.tutor-enrol-course-form button, .write-course-review-link-btn , .tutor-enroll-course-button, .tutor-add-to-cart-button{
+	background: #021844 !important; color: #ffc13c !important;
+	border-radius: 3px !important;
+}
+
+.icon-wrapper::before{
+	right:0 !important;
+	margin: 0 auto !important;
+
+}
+.single-product.woocommerce .thumbnails:hover #slider-prev, .single-product.woocommerce .thumbnails:hover #slider-next{
+	display:none !important;
+}
+
+.single_add_to_cart_button{
+	color:#021844 !important;
+}
+
+.woocommerce a.added_to_cart{
+	padding-top:0.6rem !important;
+	width:26% !important;
+	color:#021844 !important;
+	background:#ffc13c !important;
+	margin-left:30px;
+	text-transform:uppercase;
+	margin-top:10px;
+	padding-bottom:0.6rem;
+	border-radius:0 !important;
+}
+
+.woocommerce-Price-amount {
+	color:#021844 !important;
+}
+.tutor-mt-20 .tutor-btn, .start-continue-retake-button{
+background: #021844 !important;color: #ffc13c !important;
+}
+
+
+.form-row  button{
+	margin-top:19px !important;
+}
+.woocommerce-info::before{
+	background: #021844 !important;
+	
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, input[type="search"], textarea{
+	color:#000 !important;
+}
+
+.woocommerce-privacy-policy-link, .woocommerce-terms-and-conditions-link, #place_order{
+	color: #021844 !important;
+}
+#shipping_company_field label{
+	display:none !important;
+}
+#shipping_company{
+	visibility:hidden !important;
+}
+#shipping_first_name_field{
+	margin-top:0 !important;
+}
+#shipping_first_name_field label, .woocommerce form .form-row label, .woocommerce-page form .form-row label{
+	font-size:14px !important;
+}
+.paoc-popup-cust-26763{
+	font-size:15px !important;
+}
+
+
+.woocommerce form .form-row-first, .woocommerce .col2-set .col-1, .woocommerce .woocommerce-MyAccount-content .col-1, .woocommerce-page .woocommerce-MyAccount-content .col-1, .woocommerce .cart-collaterals .cross-sells, .woocommerce table.cart td.actions .coupon, .woocommerce .woocommerce-result-count, .woocommerce div.product div.images, .woocommerce div.product div.images div.thumbnails a{
+	margin-top:0 !important;
+}
+
+.required{
+	color: #b4aab4 !important;
+}
+
+.login-pop, .register-pop, .support-pop{
+	margin: 0 auto; width: 60%;
+}
+
+.support-pop-head-1{
+	font-size: 20px; color: #000; font-family: 'Open Sans'; font-weight: 600;
+}
+.support-pop-head-2{
+	font-size: 18px; color: #000; font-family: 'Open Sans'; font-weight: 500; margin-top: 10px;
+}
+
+.dt-sc-counter.type3 .dt-sc-counter-number{
+	font-size:20px !important;
+}
+
+.product-name, .product-total, .cart-subtotal th, .woocommerce-shipping-totals th, .order-total th{
+	color: #021844 !important;
+}
+
+.support-image{
+	max-width: 50%!important; height: auto; display: block; margin: 0 auto;
+}
+
+
+
+
+/*
+ * 
+ * Responsive Mobile
+ * 
+ */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+	.tutor-header-left-side{
+		margin-left:20px;
+	}
+	
+	.tutor-header-right-side {
+		margin-top:-295px;
+	}
+	.alert-btn-group{
+		margin-top:-75px;
+	}
+	
+	.tutor-alert-text span:last-child{
+		margin-top:11px;
+	}
+	.tutor-icon-circle-info{
+		margin-top:7px;
+	}
+	.tutor-alert{
+		padding-bottom:0;
+	}
+	
+	.tutor-course-progress-item {
+		margin: 0 auto;
+		margin-top:20px;
+	}
+	.tutor-dashboard-title h3{
+		font-size:20px;
+	}
+	
+	.tutor-col-4 .img-responsive{
+		display:none;
+	}
+	.tutor-col-8 h4{
+		font-size:20px;
+	}
+	
+	.tutor-dashboard-profile-data .tutor-row{
+		margin:0 auto;
+		margin-bottom:24px;
+
+	}
+	.tutor-dashboard-profile-data .tutor-row .tutor-col-12{
+		display:flex;
+		justify-content:center;
+	}
+	.tutor-v2-date-range-picker {
+		margin-top:20px;
+	}
+	
+	/*
+	 * HOME PAGE
+	 */
+	
+	.vc_custom_1650598158272{
+		display:none;
+	}
+	div[id="1528802126782-ba9cc5a4-6738"]{
+		height:0 !important;
+	}
+	.dt-sc-title.script-with-sub-title.dt-sc-kalvi-default-title{
+		margin-bottom:0;
+	}
+	.login-pop{
+	 width:90%;
+
+	}
+	#checkbox-2{
+		display:none;
+	}
+	.register-pop{
+		width:90%;
+	}
+	.support-pop{
+		width:80%;
+	}
+	.support-pop-head-1{
+		font-size:15px;
+	}
+	.support-pop-head-2{
+		font-size:13px;
+	}
+	.support-pop{
+		width:80%;
+	}
+	.support-image{
+		max-width:30% !important;
+	}
+	.main-title-section-bg{
+		background-position:center !important;
+	}
+	#toTop{
+		display:none !important;
+	}
+	.xoo-wsc-basket{
+		bottom:85px;
+		padding:9px 9px;
+		right:10px;
+	}
+	.breadcrumb{
+		text-align:center !important;
+	}
+	.main-title-section-wrapper .container{
+		left:0 !important;
+	}
+	.elementor-element-741c86f8, .elementor-element-6b7ef96, .elementor-element-b0de852{
+		width:100% !important;
+	}
+	#breadcrumb-head .elementor-widget-container h1{
+		font-size:21px !important;
+	}
+	.elementor-19910 .elementor-element.elementor-element-fd1cf34:not(.elementor-motion-effects-element-type-background), .elementor-19910 .elementor-element.elementor-element-fd1cf34 > .elementor-motion-effects-container > .elementor-motion-effects-layer, .elementor-19907 .elementor-element.elementor-element-3050a855:not(.elementor-motion-effects-element-type-background), .elementor-19907 .elementor-element.elementor-element-3050a855 > .elementor-motion-effects-container > .elementor-motion-effects-layer, .elementor-19167 .elementor-element.elementor-element-2bbfa93:not(.elementor-motion-effects-element-type-background), .elementor-19167 .elementor-element.elementor-element-2bbfa93 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+		background-position:center!important;
+	}
+	#breadcrumb-head{
+		margin-bottom:10px;
+	}
+	.jeg_post{
+		margin-bottom:30px !important;
+	}
+	#buttons-share{
+		margin-bottom:40px;
+	}
+	#share-image-quotes{
+		margin-bottom:0 !important;
+	}
+	.mobile-margin{
+		margin-bottom:30px!important;
+	}
+	.mobile-view{
+		margin:0 35px!important;
+		width:305px !important;
+	}
+	.tutor-course-archive-filters-wrap{
+		width:100%;
+	}
+	.dtlms-courselist-item-wrapper{
+		margin-bottom:30px !important;
+	}
+	.widget{
+		font-size:12px !important;
+	}
+
+	.order-1{
+		padding-right:0 !important;
+	}
+	.event-details{
+		margin-top:0px !important;
+	}
+	#primary{
+		padding-bottom:0px !important;
+	}
+	.tribe-common-l-container{
+	padding-top:0 !important;
+	}
+	.hide-me{
+		display:none !important;
+	}
+	.woocommerce-Price-amount bdi{
+/* 		position: absolute !important;
+		right:140px !important; */
+	}
+
+	.tribe-common-c-svgicon__svg-fill{
+		fill:#000 !important;
+	}
+	
+	.tribe-events-c-events-bar__search-button{
+		display:none !important;
+	}
+	.tribe-events-c-view-selector{
+		margin-top:0 !important;
+	}
+	
+	.tribe-events-c-view-selector__list{
+		background:antiquewhite;
+		margin-top:-30px;
+	}
+	.tribe-events-c-top-bar__datepicker-button{
+		padding-top:27px !important;
+	}
+	#shipping_method li label .woocommerce-Price-amount{
+		position:inherit !important;
+		visibility:visible !important;
+	}
+	.cart-subtotal td span{
+		font-weight:700;
+	}
+	#schedule_mobile{
+		margin: 0px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: clip;
+		font-size: 0px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: -4px;
+		display: flex;
+		flex-direction: column;
+	}
+	.scroll_tabs_container{
+		height:372px;
+	}
+	.scroll_tabs_container li a{
+		text-align:start;
+	}
+	.schedule-hide{
+		display:none !important;
+	}
+	.tutor-enroll-course-button{
+		margin-bottom:20px !important;
+	}
+	.tutor-warning {
+		margin-top:36px !important;
+	}
+	.tutor-warning .tutor-alert-text{
+		margin-top: -20px !important;
+	}
+	.tutor-sidebar-card{
+		display: flex !important;
+	}
+	.tutor-courses-wrap{
+		margin-left:-30%;
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.mobile-hide{
+	display:none !important;
+	}
+	
+	#shipping_method li label .woocommerce-Price-amount  {
+	visibility:visible !important;
+	position:absolute;
+	left:28%;
+  } 
+	#schedule_desktop{
+		margin: 0px; overflow: hidden; white-space: nowrap; text-overflow: clip; font-size: 0px; position: absolute; top: 0px; left: 10px; right: 10px;
+	}
+	.icon-akd{
+		display:none;
+	}
+} 
+
+
+.woocommerce-shipping-fields__field-wrapper .update_totals_on_change{
+	margin-top:-45px !important;
+}
+
+#forminator-module-25670 .forminator-row:nth-child(5){
+	margin-bottom: 10px !important;margin-top: -5px !important;
+}
+
+#tribe-events-pg-template{
+	max-width:100% !important;
+}
+
+.product-rating-wrapper{
+	display:none !important;
+}
+
+.iti__dz{
+	visibility:hidden !important;
+}
+.iti__arrow{
+	right:15px !important;
+	z-index:-1 !important;
+}
+
+.elementor-element-2577317 .elementor-widget-wrap{
+	padding:0 !important;
+}
+
+#email-1::before{
+	display:none !important;
+}
+
+#billing_company_field label, #billing_address_2, #shipping_country_field, #shipping_address_1_field, #shipping_address_2_field, #shipping_city_field, #shipping_state_field, #shipping_postcode_field{
+	padding-top:10px;
+	margin-top:10px;
+}
+
+
+.tutor-forgot-password-form {
+	margin-bottom:140px !important;
+	padding-top:237px !important;
+}
+
+.checkout_coupon .form-row-last button{
+	margin-top:0px !important;
+}
+
+
+.tribe-events-c-view-selector, #post-26455{
+	margin-top:20px;
+}
+
+/* #primary{
+	margin-left:20px !important;
+	margin-right:20px !important;
+} */
+
+
+#billing_country_field, #billing_city_field, #billing_state_field,  #billing_phone_field, #billing_email_field, #order_comments_field{ 
+	margin-top:12px !important;
+}
+#billing_address_1_field{
+	padding-top:14pxÂ !important;
+}
+
+#billing_postcode_field{
+	padding-top:14pxÂ !important;
+}
+
+
+ #shipping_method li label {
+	visibility:hidden !important;
+}
+
+
+.post-26203,.elementor-pagination, .elementor-element-adb0413, .elementor-element-adb0413{
+	margin-bottom:20px !important;
+}
+.tutor-frontend-dashboard-header{
+	padding-top:20px !important;
+}
+
+
+.product-thumb-wrapper{
+	margin-top:10px !important;
+}
+.course-pagination{
+	display:none !important;
+}
+
+.product{
+	margin-top:10px !important;
+}
+.tutor-frontend-dashboard-maincontent{
+	margin-bottom:100px !important;
+}
+
+.tutor-start-quiz-title .tutor-fs-4{
+	margin-bottom:20px !important;
+}
+
+.tribe-events-c-messages__message--notice{
+	margin-top:-10px !important;
+}
+
+
+/* #forminator-field-phone-2::placeholder{
+	color:black !important;
+}
+ */
+
+
+
+
+
+
+/* 
+ * FILTER COURSE PAGE START
+ */
+
+
+
+ .clearfix::before, .clearfix::after {
+	 content: " ";
+	 display: table;
+}
+ .clearfix::after {
+	 clear: both;
+}
+ .clearfix {
+	 *zoom: 1;
+	/* FÃ¼r den IE6 und IE7 */
+}
+ .vh, .filter input[type="checkbox"] {
+	 border: 0;
+	 clip: rect(0 0 0 0);
+	 height: 1px;
+	 margin: -1px;
+	 overflow: hidden;
+	 padding: 0;
+	 position: fixed;
+	 width: 1px;
+}
+ .hide-item, input[type="checkbox"]#Upcoming:checked ~ .filter__content .filter__item:not([data-filter*="Upcoming"]), 
+input[type="checkbox"]#Ongoing:checked ~ .filter__content .filter__item:not([data-filter*="Ongoing"]),
+input[type="checkbox"]#Past:checked ~ .filter__content .filter__item:not([data-filter*="Past"]), 
+input[type="checkbox"]#Arts:checked ~ .filter__content .filter__item:not([data-filter*="Arts"]),
+input[type="checkbox"]#Bhakti:checked ~ .filter__content .filter__item:not([data-filter*="Bhakti"]), 
+input[type="checkbox"]#Philosophy:checked ~ .filter__content .filter__item:not([data-filter*="Philosophy"]),
+input[type="checkbox"]#Yoga:checked ~ .filter__content .filter__item:not([data-filter*="Yoga"]),
+input[type="checkbox"]#Life:checked ~ .filter__content .filter__item:not([data-filter*="Life"]),
+input[type="checkbox"]#English:checked ~ .filter__content .filter__item:not([data-filter*="English"]),
+input[type="checkbox"]#Hindi:checked ~ .filter__content .filter__item:not([data-filter*="Hindi"]),
+input[type="checkbox"]#Paid:checked ~ .filter__content .filter__item:not([data-filter*="Paid"]),
+input[type="checkbox"]#Free:checked ~ .filter__content .filter__item:not([data-filter*="Free"]),
+input[type="checkbox"]#Youtube:checked ~ .filter__content .filter__item:not([data-filter*="Youtube"]),
+input[type="checkbox"]#Basic:checked ~ .filter__content .filter__item:not([data-filter*="Basic"]),
+input[type="checkbox"]#Advance:checked ~ .filter__content .filter__item:not([data-filter*="Advance"]),
+input[type="checkbox"]#Intermediate:checked ~ .filter__content .filter__item:not([data-filter*="Intermediate"]),
+input[type="checkbox"]#Zoom:checked ~ .filter__content .filter__item:not([data-filter*="Zoom"]),
+input[type="checkbox"]#Pro:checked ~ .filter__content .filter__item:not([data-filter*="Pro"]),
+input[type="checkbox"]#Self:checked ~ .filter__content .filter__item:not([data-filter*="Self"])
+
+
+{
+	 visibility: hidden;
+	 width: 0;
+	 transition: 0s 0.2s;
+}
+ .hide-item span, input[type="checkbox"]#Upcoming:checked ~ .filter__content .filter__item:not([data-filter*="Upcoming"]) span, 
+input[type="checkbox"]#Ongoing:checked ~ .filter__content .filter__item:not([data-filter*="Ongoing"]) span, 
+input[type="checkbox"]#Past:checked ~ .filter__content .filter__item:not([data-filter*="Past"]) span, 
+input[type="checkbox"]#Arts:checked ~ .filter__content .filter__item:not([data-filter*="Arts"]) span, 
+input[type="checkbox"]#Bhakti:checked ~ .filter__content .filter__item:not([data-filter*="Bhakti"]) span, 
+input[type="checkbox"]#Philosophy:checked ~ .filter__content .filter__item:not([data-filter*="Philosophy"]) span,
+input[type="checkbox"]#Yoga:checked ~ .filter__content .filter__item:not([data-filter*="Yoga"]) span,
+input[type="checkbox"]#Life:checked ~ .filter__content .filter__item:not([data-filter*="Life"]) span,
+input[type="checkbox"]#English:checked ~ .filter__content .filter__item:not([data-filter*="English"]) span,
+input[type="checkbox"]#Hindi:checked ~ .filter__content .filter__item:not([data-filter*="Hindi"]) span,
+input[type="checkbox"]#Paid:checked ~ .filter__content .filter__item:not([data-filter*="Paid"]) span,
+input[type="checkbox"]#Free:checked ~ .filter__content .filter__item:not([data-filter*="Free"]) span,
+input[type="checkbox"]#Zoom:checked ~ .filter__content .filter__item:not([data-filter*="Zoom"]) span,
+input[type="checkbox"]#Youtube:checked ~ .filter__content .filter__item:not([data-filter*="Youtube"]) span,
+input[type="checkbox"]#Basic:checked ~ .filter__content .filter__item:not([data-filter*="Basic"]) span,
+input[type="checkbox"]#Intermediate:checked ~ .filter__content .filter__item:not([data-filter*="Intermediate"]) span,
+input[type="checkbox"]#Advance:checked ~ .filter__content .filter__item:not([data-filter*="Advance"]) span,
+input[type="checkbox"]#Pro:checked ~ .filter__content .filter__item:not([data-filter*="Pro"]) span,
+input[type="checkbox"]#Self:checked ~ .filter__content .filter__item:not([data-filter*="Self"]) span
+
+
+
+{
+	 visibility: hidden;
+	 opacity: 0;
+	 transform: scale(0.9);
+}
+ .show-item, input[type="checkbox"]#all:checked ~ .filter__content .filter__item[data-filter] {
+	 visibility: visible;
+	 width: 50%;
+	 transition: 0s;
+}
+ .show-item span, input[type="checkbox"]#all:checked ~ .filter__content .filter__item[data-filter] span {
+	 visibility: visible;
+	 opacity: 1;
+	 transform: scale(1);
+}
+ 
+ .filter {
+/* 	 background: #fff;
+	 max-width: 40em;
+	 margin: auto;
+	 display: flex;
+	 border-radius: 2px;
+	 box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .025); */
+}
+ .filter input[type="checkbox"]#all:focus ~ .filter__control .filter__button[for="all"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Upcoming:focus ~ .filter__control .filter__button[for="Upcoming"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Ongoing:focus ~ .filter__control .filter__button[for="Ongoing"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Past:focus ~ .filter__control .filter__button[for="Past"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Arts:focus ~ .filter__control .filter__button[for="Arts"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Bhakti:focus ~ .filter__control .filter__button[for="Bhakti"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Philosophy:focus ~ .filter__control .filter__button[for="Philosophy"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Yoga:focus ~ .filter__control .filter__button[for="Yoga"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Life:focus ~ .filter__control .filter__button[for="Life"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#English:focus ~ .filter__control .filter__button[for="English"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Hindi:focus ~ .filter__control .filter__button[for="Hindi"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Paid:focus ~ .filter__control .filter__button[for="Paid"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Free:focus ~ .filter__control .filter__button[for="Free"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Zoom:focus ~ .filter__control .filter__button[for="Zoom"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Youtube:focus ~ .filter__control .filter__button[for="Youtube"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Basic:focus ~ .filter__control .filter__button[for="Basic"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Intermediate:focus ~ .filter__control .filter__button[for="Intermediate"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Advance:focus ~ .filter__control .filter__button[for="Advance"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Pro:focus ~ .filter__control .filter__button[for="Pro"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+ .filter input[type="checkbox"]#Self:focus ~ .filter__control .filter__button[for="Self"] {
+	 outline: rgba(255, 133, 27, .5) solid 1px;
+}
+
+ .filter__control {
+	 flex: 1;
+	 padding: 40px 0;
+	 background: #fffaf6;
+}
+ .filter__control h3 {
+	 padding: 0 20px 20px;
+	 text-transform: uppercase;
+	 color: #a2a2a2;
+	 font-size: 12px;
+	 line-height: 1;
+	 margin: 0;
+}
+ .filter__button {
+	 display: block;
+/* 	 padding: 10px 20px; */
+	 padding:5px 0px;
+	 cursor: pointer;
+	 color: #000;
+	 position: relative;
+	 overflow: hidden;
+	 transition: 0.2s ease-in-out;
+	 font-size:14px;
+}
+ .filter__button:before {
+	 content: '';
+	 display: block;
+	 background: #ffc13c;
+/* 	 opacity: 0.5; */
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 width: 10px;
+	 transform: translateX(-10px);
+	 transition: 0.2s ease-in-out;
+}
+ .filter__button:hover {
+	 padding-left: 25px;
+}
+ .filter__button:hover:before {
+	 transform: translateX(-5px);
+}
+ .filter__button.disabled, input[type="checkbox"]#all:checked ~ .filter__control .filter__button:not([for="all"]) {
+	 color: #ccc;
+	 padding-left: 20px !important;
+	 background: none !important;
+	 cursor: default;
+	 pointer-events: none;
+}
+ .filter__button.disabled:before, input[type="checkbox"]#all:checked ~ .filter__control .filter__button:not([for="all"]).filter__button:before {
+	 background: #ccc;
+	 opacity: 1;
+	 transform: translateX(-10px) !important;
+}
+ .filter__content {
+	 width: 75%;
+}
+ .filter__list {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 20px;
+	 display: flex;
+	 flex-wrap: wrap;
+}
+ .filter__item {
+	 position: relative;
+	 width: 50%;
+}
+ .filter__item:before {
+	 content: '';
+	 display: block;
+/* 	 padding-top: 100%; */
+}
+ .filter__item span {
+/* 	 display: flex;
+	 position: absolute;
+	 top: 20px;
+	 bottom: 20px;
+	 left: 20px;
+	 right: 20px;
+	 background: #eee;
+	 align-items: center;
+	 justify-content: center;
+	 color: #fff;
+	 font-size: 50px;
+	 font-weight: 300;
+	 border-radius: 2px;
+	 transition: 0.2s; */
+}
+ .filter__item[data-filter*="red"] span {
+	 background: #ff4136;
+}
+ .filter__item[data-filter*="blue"] span {
+	 background: #0074d9;
+}
+ .filter__item[data-filter*="green"] span {
+	 background: #3d9970;
+}
+ .filter__item[data-filter*="border"] span {
+	 border: 10px solid rgba(255, 255, 255, .75);
+}
+ input[type="checkbox"]#Upcoming:checked ~ .filter__control .filter__button[for="Upcoming"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Upcoming:checked ~ .filter__control .filter__button[for="Upcoming"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Ongoing:checked ~ .filter__control .filter__button[for="Ongoing"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Ongoing:checked ~ .filter__control .filter__button[for="Ongoing"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Past:checked ~ .filter__control .filter__button[for="Past"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Past:checked ~ .filter__control .filter__button[for="Past"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Arts:checked ~ .filter__control .filter__button[for="Arts"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Arts:checked ~ .filter__control .filter__button[for="Arts"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Bhakti:checked ~ .filter__control .filter__button[for="Bhakti"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Bhakti:checked ~ .filter__control .filter__button[for="Bhakti"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Philosophy:checked ~ .filter__control .filter__button[for="Philosophy"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Philosophy:checked ~ .filter__control .filter__button[for="Philosophy"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Yoga:checked ~ .filter__control .filter__button[for="Yoga"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Yoga:checked ~ .filter__control .filter__button[for="Yoga"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Life:checked ~ .filter__control .filter__button[for="Life"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Life:checked ~ .filter__control .filter__button[for="Life"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#English:checked ~ .filter__control .filter__button[for="English"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#English:checked ~ .filter__control .filter__button[for="English"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Hindi:checked ~ .filter__control .filter__button[for="Hindi"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Hindi:checked ~ .filter__control .filter__button[for="Hindi"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Paid:checked ~ .filter__control .filter__button[for="Paid"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Paid:checked ~ .filter__control .filter__button[for="Paid"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Free:checked ~ .filter__control .filter__button[for="Free"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Free:checked ~ .filter__control .filter__button[for="Free"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Zoom:checked ~ .filter__control .filter__button[for="Zoom"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Zoom:checked ~ .filter__control .filter__button[for="Zoom"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Youtube:checked ~ .filter__control .filter__button[for="Youtube"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Youtube:checked ~ .filter__control .filter__button[for="Youtube"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Basic:checked ~ .filter__control .filter__button[for="Basic"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Basic:checked ~ .filter__control .filter__button[for="Basic"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Intermediate:checked ~ .filter__control .filter__button[for="Intermediate"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Intermediate:checked ~ .filter__control .filter__button[for="Intermediate"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Advance:checked ~ .filter__control .filter__button[for="Advance"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Advance:checked ~ .filter__control .filter__button[for="Advance"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Pro:checked ~ .filter__control .filter__button[for="Pro"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Pro:checked ~ .filter__control .filter__button[for="Pro"]:before {
+	 transform: translateX(0px);
+}
+ input[type="checkbox"]#Self:checked ~ .filter__control .filter__button[for="Self"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#Self:checked ~ .filter__control .filter__button[for="Self"]:before {
+	 transform: translateX(0px);
+}
+
+ input[type="checkbox"]#all:checked ~ input[type="checkbox"] {
+	 display: none;
+}
+ input[type="checkbox"]#all:checked ~ .filter__control .filter__button[for="all"] {
+	 background: #fff;
+	 padding-left: 30px;
+}
+ input[type="checkbox"]#all:checked ~ .filter__control .filter__button[for="all"]:before {
+	 transform: translateX(0px);
+}
+ @media screen and (max-width: 45rem) {
+	 .filter__item {
+		 width: 50%;
+	}
+}
+ @media screen and (max-width: 33.75rem) {
+	 .filter {
+		 flex-direction: column;
+	}
+	 .filter__control {
+		 padding: 40px 0 20px;
+		 white-space: nowrap;
+		 overflow-x: scroll;
+	}
+	 .filter__button {
+/* 		 display: inline-block; */
+	}
+	 .filter__content {
+		 width: 100%;
+	}
+	 .filter__item {
+		 width: 100%;
+	}
+}
+ 
+/* 
+ * FILTER COURSE PAGE END
+ */
+
+
+.dashicons-star-filled{
+	color: #fccc27 !important;
+}
+
+
+
+ @media (max-width: 767px) {
+	
+	 
+	 .tutor-modal-body .tutor-py-48 .tutor-row .tutor-col-12 img{
+		 width:100% !important;
+	 }
+	 
+	 #tutor-login-form button {
+		 padding:8px 16px !important;
+	 }
+	 #tutor-login-form .tutor-m a{
+		 padding:0 !important;
+	 }
+	 
+} 
+
+.course_margin_6{
+	margin-bottom:6px !important;
+}
+.course_margin_8{
+	margin-bottom:8px !important;
+}
+.course_margin_10{
+	margin-bottom:10px !important;
+}
+.course_margin_15{
+	margin-bottom:15px !important;
+}
+.course_margin_20{
+	margin-bottom:20px !important;
+}
+.course_margin_30{
+	margin-bottom:30px !important;
+}

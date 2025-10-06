@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'custom-raleway';
+  src: url('../../../fonts/1380custom-raleway.woff2') format('woff2'),
+       url('../../../fonts/1380custom-raleway.woff2') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-raleway {
+  font-family: 'custom-raleway', sans-serif !important;
+}
