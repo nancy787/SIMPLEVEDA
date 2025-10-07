@@ -3,7 +3,7 @@ import {Breadcrump, Container} from "../../index";
 export default function Quotes() {
     return (
         <>
-        <Breadcrump/>
+          <Breadcrump title="Quotes" />
         <Container>
           <div
   id="post-18728"

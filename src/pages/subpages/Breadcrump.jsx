@@ -1,12 +1,13 @@
-export default function Breadcrump() {
+import BreadcrumpImg from "../../assets/images/breadcrump.jpg";
+
+export default function Breadcrump({ title }) {
     return (
        <section className="main-title-section-wrapper aligncenter">
         {" "}
         <div
             className="main-title-section-bg"
             style={{
-            backgroundImage:
-                "url(https://simplevedas.com/wp-content/themes/kalvi/images/breadcrumb.png)",
+            backgroundImage: BreadcrumpImg,
             backgroundPosition: "left top",
             backgroundSize: "cover",
             backgroundRepeat: "repeat",
@@ -17,7 +18,7 @@ export default function Breadcrump() {
         <div className="container">
             {" "}
             <div className="main-title-section">
-            <h1>Contact</h1>
+            <h1>{title}</h1>
             </div>
             <div className="breadcrumb">
             <a href="https://simplevedas.com/">Home</a>

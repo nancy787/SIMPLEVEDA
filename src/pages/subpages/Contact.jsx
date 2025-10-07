@@ -3,7 +3,7 @@ import {Breadcrump, Container} from "../../index";
 export default function Contact() {
     return (
         <>  
-        <Breadcrump/>
+        <Breadcrump title="Contact"/>
         <Container>
         {/* Primary */}
             <section id="primary" className="content-full-width">

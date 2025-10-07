@@ -2,7 +2,7 @@ import {Breadcrump, Container} from "../../index";
 export default function Shop( ) {
     return (
         <>
-           <Breadcrump/>
+           <Breadcrump title="Shop"/>
            <Container>
             <div
                 id="post-37571"

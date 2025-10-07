@@ -207,7 +207,7 @@ body.layout-boxed
 
 .dt-sc-one-half
 {
-    width: 49%;
+    width: 49% !important;
 }
 
 .dt-sc-one-third
