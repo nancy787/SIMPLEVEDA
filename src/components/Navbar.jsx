@@ -1,6 +1,16 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/images/simple-vedas-logo.png";
+import { useState } from 'react';
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+ const menuItems = [
+    { label: 'Simple Vedas', href: 'https://simplevedas.com/simple-vedas/' },
+    { label: 'Srila Prabhupada', href: 'https://simplevedas.com/srila-prabhupada/' },
+    { label: 'Our Inspiration', href: 'https://simplevedas.com/our-inspiration/' },
+    { label: 'Madhusudana Visnu Das', href: 'https://simplevedas.com/madhusudana-visnu-das/' }
+  ];
 return (
   <>
     <section
@@ -30,10 +40,9 @@ return (
                 />{" "}
                 <a href="https://simplevedas.com/">
                   <img
-                    src="https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/logo-of-simple-vedas.png?fit=562%2C100&ssl=1"
+                    src={Logo}
                     className="attachment-full size-full wp-image-19964"
-                    alt=""
-                    srcSet="https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/logo-of-simple-vedas.png?w=562&ssl=1 562w, https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/logo-of-simple-vedas.png?resize=300%2C53&ssl=1 300w, https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/logo-of-simple-vedas.png?resize=540%2C96&ssl=1 540w, https://i0.wp.com/simplevedas.com/wp-content/uploads/2022/02/logo-of-simple-vedas.png?resize=500%2C89&ssl=1 500w"
+                    alt="simpleVedaLogo"
                     sizes="(max-width: 562px) 100vw, 562px"
                   />{" "}
                 </a>
@@ -62,148 +71,54 @@ return (
                     className="elementor-nav-menu"
                     data-smartmenus-id={1759656675106776}
                   >
+                    
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17810 current_page_item menu-item-20207">
-                      <a
-                        href="https://simplevedas.com/"
-                        aria-current="page"
-                        onclick="return true"
+                      <Link to="/"
                         className="elementor-item elementor-item-active"
+                        aria-current="page"
                       >
-                        Home
-                      </a>
+                          Home
+                      </Link>
                     </li>
-                    <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20218">
-                      <a
-                        href="https://simplevedas.com/simple-vedas/"
-                        onclick="return true"
-                        className="elementor-item has-submenu"
-                        id="sm-1759656675106776-1"
-                        aria-haspopup="true"
-                        aria-controls="sm-1759656675106776-2"
-                        aria-expanded="false"
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17810 current_page_item menu-item-20207">
+                      <Link to="/"
+                        className="elementor-item elementor-item-active"
+                        aria-current="page"
                       >
-                        About
-                        <span className="sub-arrow">
-                          <i className="fas fa-angle-down" />
-                        </span>
-                      </a>
-                      <ul
-                        className="sub-menu elementor-nav-menu--dropdown sm-nowrap"
-                        id="sm-1759656675106776-2"
-                        role="group"
-                        aria-hidden="true"
-                        aria-labelledby="sm-1759656675106776-1"
-                        aria-expanded="false"
-                        style={{
-                          width: "auto",
-                          display: "none",
-                          top: "auto",
-                          left: 0,
-                          marginLeft: 0,
-                          marginTop: 0,
-                          minWidth: "10em",
-                          maxWidth: 1000
-                        }}
-                      >
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20216">
-                          <a
-                            href="https://simplevedas.com/simple-vedas/"
-                            onclick="return true"
-                            className="elementor-sub-item"
-                          >
-                            Simple Vedas
-                          </a>
-                        </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20217">
-                          <a
-                            href="https://simplevedas.com/srila-prabhupada/"
-                            onclick="return true"
-                            className="elementor-sub-item"
-                          >
-                            Srila Prabhupada
-                          </a>
-                        </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20213">
-                          <a
-                            href="https://simplevedas.com/our-inspiration/"
-                            onclick="return true"
-                            className="elementor-sub-item"
-                          >
-                            Our Inspiration
-                          </a>
-                        </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20212">
-                          <a
-                            href="https://simplevedas.com/madhusudana-visnu-das/"
-                            onclick="return true"
-                            className="elementor-sub-item"
-                          >
-                            Madhusudana Visnu Das
-                          </a>
-                        </li>
-                      </ul>
-                      <span
-                        className="scroll-up"
-                        style={{
-                          top: "auto",
-                          left: 0,
-                          marginLeft: 0,
-                          width: "220.109px",
-                          zIndex: 3,
-                          display: "none"
-                        }}
-                      >
-                        <span className="scroll-up-arrow" />
-                      </span>
-                      <span
-                        className="scroll-down"
-                        style={{
-                          display: "none",
-                          top: "auto",
-                          left: 0,
-                          marginLeft: 0,
-                          width: "220.109px",
-                          zIndex: 3
-                        }}
-                      >
-                        <span className="scroll-down-arrow" />
-                      </span>
+                          About ▼
+                      </Link>
                     </li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25599">
-                      <a
-                        href="/courses"
-                        onclick="return true"
+                      <Link
+                        to="/courses"
                         className="elementor-item"
                       >
                         Courses
-                      </a>
+                      </Link>
                     </li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20215">
-                      <a
-                        href="/quotes"
-                        onclick="return true"
+                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25599">
+                      <Link
+                        to="/quotes"
                         className="elementor-item"
                       >
                         Quotes
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-28705">
-                      <a
-                        href="/shop"
-                        onclick="return true"
-                        className="elementor-item"
-                      >
-                        Shop
-                      </a>
+                      <Link 
+                          to="/shop"
+                          className="elementor-item"
+                        >
+                          Shop
+                        </Link>
                     </li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20208">
-                      <a
-                        href="/contact"
-                        onclick="return true"
-                        className="elementor-item"
-                      >
-                        Contact
-                      </a>
+                      <Link 
+                          to="/contact"
+                          className="elementor-item"
+                        >
+                          Contact
+                        </Link>
                     </li>
                     <li className=" astm-search-menu is-menu full-width-menu menu-item">
                       <a href="#" aria-label="Search Icon Link">
