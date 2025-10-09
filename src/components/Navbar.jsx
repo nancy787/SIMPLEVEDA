@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/images/simple-vedas-logo.png";
 import { useState } from 'react';
 
@@ -11,6 +11,16 @@ export default function Navbar() {
     { label: 'Our Inspiration', href: 'https://simplevedas.com/our-inspiration/' },
     { label: 'Madhusudana Visnu Das', href: 'https://simplevedas.com/madhusudana-visnu-das/' }
   ];
+
+  const navLinks = [
+        { path: '/', name: 'Home' },
+        { path: '/about', name: 'About ▼' },
+        { path: '/courses', name: 'Courses' },
+        { path: '/quotes', name: 'Quotes' },
+        { path: '/Shop', name: 'Shop' },
+        { path: '/contact', name: 'Contact' },
+  ];
+
 return (
   <>
     <section
@@ -71,55 +81,18 @@ return (
                     className="elementor-nav-menu"
                     data-smartmenus-id={1759656675106776}
                   >
-                    
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17810 current_page_item menu-item-20207">
-                      <Link to="/"
-                        className="elementor-item elementor-item-active"
-                        aria-current="page"
-                      >
-                          Home
-                      </Link>
-                    </li>
-                      <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17810 current_page_item menu-item-20207">
-                      <Link to="/"
-                        className="elementor-item elementor-item-active"
-                        aria-current="page"
-                      >
-                          About ▼
-                      </Link>
-                    </li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25599">
-                      <Link
-                        to="/courses"
-                        className="elementor-item"
-                      >
-                        Courses
-                      </Link>
-                    </li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25599">
-                      <Link
-                        to="/quotes"
-                        className="elementor-item"
-                      >
-                        Quotes
-                      </Link>
-                    </li>
-                    <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-28705">
-                      <Link 
-                          to="/shop"
-                          className="elementor-item"
-                        >
-                          Shop
-                        </Link>
-                    </li>
-                    <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20208">
-                      <Link 
-                          to="/contact"
-                          className="elementor-item"
-                        >
-                          Contact
-                        </Link>
-                    </li>
+                    {navLinks.map((link) => (
+                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17810 current_page_item menu-item-20207">
+                          <NavLink to={link.path}
+                          className={({ isActive }) => (isActive 
+                            ? 'elementor-item elementor-item-active' 
+                            : 'elementor-item'
+                          )}
+                          >
+                              {link.name}
+                          </NavLink>
+                        </li>
+                    ))}
                     <li className=" astm-search-menu is-menu full-width-menu menu-item">
                       <a href="#" aria-label="Search Icon Link">
                         <svg
