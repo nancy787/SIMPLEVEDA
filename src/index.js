@@ -19,6 +19,10 @@ import Breadcrump from "./pages/subpages/Breadcrump";
 import Shop from "./pages/subpages/Shop";
 import Quotes from "./pages/subpages/Quotes";
 import AllCourses from "./pages/subpages/AllCourses";
+import AdminLayout from "./Layouts/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
+import Users from "./pages/admin/Users";
+import HeaderPage from "./pages/admin/HeaderPage";
 
 export {
     Navbar,
@@ -41,5 +45,9 @@ export {
     Breadcrump,
     Shop,
     Quotes,
-    AllCourses
+    AllCourses,
+    AdminLayout,
+    Dashboard,
+    Users,
+    HeaderPage
 }
