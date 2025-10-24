@@ -24,7 +24,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function Header() {
-const phone = "+91 9999999998";
+  const phone = "+91 9999999998";
   const email = "info@simplevedas.com";
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md")); // below md = mobile
@@ -37,7 +37,7 @@ const phone = "+91 9999999998";
       label: "Support Us",
       icon: <FavoriteIcon />,
       to: "/support",
-      color: theme.palette.warning.main,
+      color:"#800000",
     },
   ];
 
@@ -64,10 +64,10 @@ return (
         <Box sx={{ display: "flex", gap: 2 }}>
           {!isMobile && (
             <>
-              <Button sx={{ color: "black", textTransform: "none", fontSize: 18 }}>
+              <Button sx={{ color: "black", textTransform: "none", fontSize: 16, fontFamily: "Sans-serif" }}>
                 {phone}
               </Button>
-              <Button sx={{ color: "black", textTransform: "none", fontSize: 18 }}>
+              <Button sx={{ color: "black", textTransform: "none", fontSize: 16, fontFamily: "Sans-serif" }}>
                 {email}
               </Button>
             </>
@@ -89,7 +89,8 @@ return (
                 sx={{
                   color: item.color || "black",
                   textTransform: "none",
-                  fontSize: 18,
+                  fontSize: 16,
+                  fontFamily: "Sans-serif"
                 }}
                 startIcon={item.icon}
               >
