@@ -85,6 +85,7 @@ export default function Welcome() {
                         <div className="wpb_text_column wpb_content_element  vc_custom_1646885110127">
                           <div className="wpb_wrapper">
                             <p>
+                              <strong>
                               Simple Vedas is to serve as a bridge between the
                               ancient and the modern, between the spiritual and
                               the material, between the philosophy and the
@@ -93,6 +94,7 @@ export default function Welcome() {
                               one’s life, bringing to it more meaning and
                               content, and thus enjoy the bliss that we all are
                               really made for.
+                              </strong>
                             </p>
                           </div>
                         </div>
